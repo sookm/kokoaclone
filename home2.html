@@ -5,7 +5,13 @@
   </head>
   <body>
     <form>
-      <input type="color" />
+      <input type="file" accept="image/*,.pdf,.png" />
+      <input disabled type="color" />
+      <input required placeholder="Name" type="text" />
+      <input required placeholder="Last Name" type="text" />
+      <input required placeholder="Username" type="text" />
+      <input required placeholder="Password" minlength="10" type="password" />
+      <input type="submit" value="Create Account" />
     </form>
   </body>
 </html>
