@@ -4,14 +4,41 @@
     <title>Home - First website.</title>
   </head>
   <body>
-    <form>
-      <input type="file" accept="image/*,.pdf,.png" />
-      <input disabled type="color" />
-      <input required placeholder="Name" type="text" />
-      <input required placeholder="Last Name" type="text" />
-      <input required placeholder="Username" type="text" />
-      <input required placeholder="Password" minlength="10" type="password" />
-      <input type="submit" value="Create Account" />
-    </form>
+    <header>
+      <h1>Create Your Website</h1>
+    </header>
+    <main>
+      <address>123 Road Altavista</address>
+      <span>hello!</span>
+      <p>p is for paragraph</p>
+      <form>
+        <div>
+          <input type="file" accept="image/*,.pdf,.png" />
+          <input disabled type="color" />
+        </div>
+
+        <div>
+          <input required placeholder="Name" type="text" />
+          <input required placeholder="Last Name" type="text" />
+          <input required placeholder="Username" type="text" />
+          <input
+            required
+            placeholder="Password"
+            minlength="10"
+            type="password"
+          />
+          <input type="submit" value="Create Account" />
+        </div>
+
+        <label for="website">blog</label>
+        <input id="website" required placeholder="Name" type="text" />
+        <label for="email">email</label>
+        <input id="email" required placeholder="Name" type="email" />
+        <label for="birthday">birthday</label>
+        <input id="birthday" required placeholder="Name" type="date" />
+        <input type="submit" value="submit" />
+      </form>
+    </main>
+    <footer>&copy; 2020 K.</footer>
   </body>
 </html>
