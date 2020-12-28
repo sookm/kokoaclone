@@ -1,0 +1,8 @@
+body {
+  background-color: ivory;
+}
+h1 {
+  color: tomato;
+  cascating; from top to buttom, so the last change was style in html that's why.
+  if you change the order, the color is changed as the last code
+}
