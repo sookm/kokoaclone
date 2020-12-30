@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <style>
+      body {
+        margin: 20px;
+
+        it works well
+      }
+      span {
+         margin: 30px;
+
+         *padding applies to inline
+
+         *inlines do not have height or width
+         *also do not have margin on top and buttom
+
+         *inlines do have padding
+         and they only have margin left and right
+
+         **when trying to do margin on top something
+           inline should be block
+      }
+      .btn {
+          padding : 5px 10px;
+          border-radius: 5px;
+      }
+      .teal {
+          background-color: teal;
+      }
+      .tomato {
+          background-color: tomato;
+
+          #tomato = id="tomato"
+          .tomato = class="tomato"
+
+          *class es do not have to be unique
+           you can share classes and
+
+         **you can have many classes as you want
+          *id has to be Unique
+      }
+    </style>
+  </head>
+  <body>
+    <span class="btn teal">hello</span>
+    <span class="btn tomato">hello</span>
+    <span class="btn teal">hello</span>
+    <span class="btn tomato">hello</span>
+    <span class="btn teal">hello</span>
+    <span class="btn tomato">hello</span>
+  </body>
+</html>
