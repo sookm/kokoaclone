@@ -11,11 +11,28 @@
           margin-right: 5px;
           margin-bottom: 10px;
           margin: 0;
+          margin: 20px 15px;
+          margin: 20px 5px 12px 99px;
           background-color: thistle;
           that doesnt work because of cascading stylesheet
+
+          on the last margin
+          20px left one for top and buttom for vertical
+          15px right one for left one right that works on horizontal
+
+          if margin has 4 values
+          these mean clockwise top-right-buttom-left order
+
+          **collapsing margin**
+          when the div has magrin over body
+          when white box's(div) borders are same with purple box(body)'s' borders
+          then their margins Become One** and this happens Only Vertically**
+          80px of div(box) pushes Body as well
+          padding is the solution to not happen this
+
       }
       div {
-          margin-left: 50px;
+          margin: 80px 50px;
           height: 150px;
           width: 150px;
           background-color: whitesmoke;
