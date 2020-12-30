@@ -6,39 +6,45 @@
       html {background-color: tomato;
       }
       body {
+          margin-top: 20px;
+          margin-left: 10px;
+          margin-right: 5px;
+          margin-bottom: 10px;
+          margin: 0;
           background-color: thistle;
+          that doesnt work because of cascading stylesheet
       }
       div {
-        height: 150px;
-        width: 150px;
-        background-color: whitesmoke;
-        inline property can't have height and width properties
-        div is gone
+          margin-left: 50px;
+          height: 150px;
+          width: 150px;
+          background-color: whitesmoke;
+          inline property can't have height and width properties
+          div is gone
 
-        inline do not have height and width
-        blocks have height and width
+          inline do not have height and width
+          blocks have height and width
 
-        blocks(box) have 3 properties margin, padding, border
+          blocks(box) have 3 properties margin, padding, border
 
-        Browser gives style fat title and space automatically
-        user agent stypesheet means that
-        body has margin as 8px
+          Browser gives style fat title and space automatically
+          user agent stypesheet means that
+          body has margin as 8px
 
-        margin is space from the border of the box to the outside by default
-        that the body has
-        so you can see the totmato background color
-
+          margin is space from the border of the box to the outside by default
+          that the body has
+          so you can see the totmato background color
+          this works automatically so you can make margin 0
       }
       span {
-        display: inline;
-        display: block;
-        background-color: turquoise;
-        display property span has default inline
+          display: inline;
+          display: block;
+          background-color: turquoise;
+          display property span has default inline
       }
     </style>
   </head>
   <body>
-    <h1>Hello!</h1>
     <div></div>
     <span>hello</span>
     <span>hello</span>
