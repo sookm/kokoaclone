@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <style>
+      body {
+        height: 100vh;
+        margin: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        justify-content: space-between;
+        align-items: center;
+
+        main axis is horizontal by default
+        cross axis is vertical by defult
+        *But defualt that can be modified later
+
+        *justify content works on the main axis
+        *align items works on the corss axis
+        align items has many options
+        in case of stretch you have to remove height on div
+
+        *vh means viewport height
+        viewport means screen
+        100vh means 100% viewport height
+        you can put px too
+        **vh is relative on different screen sizes
+
+      }
+      div {
+        width: 300px;
+        height: 300px;
+        background-color: teal;
+
+        *flex box
+        it allows to move boxes anywhere you want and
+        it is super flexible
+        it works surely for 2 dimensional
+        the way to active it is very easy
+        *rules of flexbox are very important
+        *rule 1 you dot Not talk to the children
+        talk to the Father
+        *rule 2
+
+
+        in case of disaply inline-block
+        margin-right: some px; we can modify it
+        BUT
+        *inliine-block is Old and has many problems
+        there is space between each other
+        the problem is that the space works in the reason we do not know
+      }
+      #second {
+          background-color: wheat;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <div id="second"></div>
+    <div></div>
+  </body>
+</html>
