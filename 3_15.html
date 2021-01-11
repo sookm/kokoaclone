@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>The Kokoa times</title>
+    <style>
+      body {
+        height: 1000vh;
+        margin: 20px;
+      }
+      span {
+        background-color: yellowgreen;
+        padding: 5px;
+        border-radius: 10px;
+        text-decoration: underline;
+      }
+      p span {
+        color: white;
+        text-decoration: none;
+
+        and it can be
+        div p span
+        header p span  applied to every span
+
+        that is not good way
+
+        div has two chilren span and p
+      }
+      div > span {
+        text-decoration: underline;
+
+        * this has to be direct childeren
+      }
+      p + span {
+        text-decoration: none;
+
+        *to apply to next span
+         not to direct children of p
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <span>hello</span>
+      <p>
+        Lorem ipsum dolor sit amet consecetur adipisicing elit. Quod commodi et
+        sequi ipsam odio dolorem. <span>inside</span>
+      </p>
+      <span>hello</span>
+    </div>
+  </body>
+</html>
