@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>The Kokoa Times</title>
+    <style>
+      body {
+        height: 1000vh;
+        margin: 50px;
+      }
+      div {
+        width: 300px;
+        height: 300px;
+        background-color: wheat;
+        position: relative;
+
+        *position static
+        the position of the box is where it started, where it is layouted
+      }
+      .green {
+        background-color: teal;
+        height: 100px;
+        position: absolute;
+
+        width: 100px;
+        top: 0px;
+        right: 0px;
+
+        *position relative
+        the element begins where it shdoul be and then
+        you modify it based on when it started
+
+        *position absolute
+        will align itself accroding to the closest relative father
+        the father of green class seems div
+        but div is Not relative
+
+        body is the most relative father.
+
+        So when you put right 0px on position relaitve,
+        green class div goes all the way to the right of the body
+
+        it is all abut relative father
+        if it doesn't find any relative father,
+        it is going to align itself of the Body!
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="green"></div>
+    </div>
+  </body>
+</html>
