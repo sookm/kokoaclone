@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <style>
+      html {
+          background-color: white;
+          padding: 50px;
+      }
+      div {
+            background-color: wheat;
+            padding: 100px;
+      }
+      input:focus {
+            background-color: tomato;
+
+            when you click the input blank
+            it changes
+            it is focused
+      }
+      a:visited {
+            color: tomato;
+
+            **visited
+            when you back to the page after visiting the anchor
+      }
+      a:hover {
+          color: teal;
+      }
+      a:focus {
+          color: turquoise;
+      }
+      input::placeholder {
+          color: slateblue;
+      }
+      input {
+          color: yellowgreen;
+      }
+      p::selection {
+          color: white;
+          background-color: yellowgreen;
+
+          when you select text its color is changed
+      }
+      p::first-letter {
+          color: white;
+          font-size: 50px;
+          background-color: yellowgreen;
+      }
+      p::first-line {
+          color: white;
+          font-size: 50px;
+          background-color: yellowgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, aut
+      eius, non, dolorem iste hic sint eaque blanditiis impedit temporibus magni
+      rerum totam repudiandae doloribus. Voluptas sapiente tempora tenetur rem.
+    </p>
+    <form>
+      <input type="text" placeholder="Name" id="" />
+      <input type="text" name"" id="" /> <input type="text" name"" id="" />
+    </form>
+    <div>
+      <a href="https://apple.com">Go to apple</a>
+      <input type="text" />
+      <input type="text" />
+      <button>hello</button>
+    </div>
+  </body>
+</html>
