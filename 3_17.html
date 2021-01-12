@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <style>
+      html {
+          background-color: white;
+          padding: 50px;
+      }
+      div {
+            background-color: wheat;
+            padding: 100px;
+      }
+      button {
+            padding: 5px;
+            border-radius: 10px;
+      }
+      button:hover {
+            background-color: tomato;
+      }
+      button:focus {
+            background-color: tomato;
+          *focus is when the key is selected On keyboard
+          This is different with button active
+      }
+      input:focus {
+            background-color: tomato;
+
+            when you click the input blank
+            it changes
+            it is focused
+      }
+      a:visited {
+            color: tomato;
+
+            **visited
+            when you back to the page after visiting the anchor
+      }
+      a:hover {
+          color: teal;
+      }
+      a:focus {
+          color: turquoise;
+      }
+      form {
+          border:1px solid salmon;
+          display: flex;
+          flex-direction: column;
+          padding: 20px;
+      }
+      form:focus-within {
+          border-color: seagreen;
+
+          **focus within
+          is a state for when an element has children that is focused
+          is for an element that might have children that is focused
+          when its children is focused
+          if one of the inputs are focused
+          their fathers border color is going to be changed to seagreen
+      }
+      form:hover input {
+          background-color: sienna;
+
+          **hover input
+          it will affect on input which is children
+          when only it hover over on its children input
+          it changes
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <input type="text" name"" id="" /> <input type="text" name"" id="" />
+      <input type="text" name"" id="" />
+    </form>
+    <div>
+      <a href="https://apple.com">Go to apple</a>
+      <input type="text" />
+      <input type="text" />
+      <button>hello</button>
+    </div>
+  </body>
+</html>
