@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>You Are Awesome!</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300;600&display=swap");
+      body {
+        font-family: "MuseoModerno", cursive;
+      }
+      body {
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      body > form {
+        height: 812px;
+        width: 350px;
+        padding: 15px;
+        border: 6px solid teal;
+      }
+
+      .top_bar {
+        margin: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+      }
+
+      .top_bar_column:first-child {
+        margin-right: 10px;
+        font-size: 25px;
+      }
+      .top_bar_column:last-child span {
+        font-size: 25px;
+        font-weight: 700;
+        margin-left: 70px;
+      }
+      .play_music {
+        margin: 50px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .photoicon {
+        padding: 40px;
+        background-color: rgb(243, 182, 67);
+        border-radius: 10%;
+        border: 3px solid black;
+        color: white;
+        font-size: 35px;
+      }
+      .play_music_title {
+        margin: 1px 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: left;
+        margin-left: 15px;
+      }
+      .play_title:nth-child(1) {
+        font-size: 32px;
+        font-weight: 800;
+      }
+      .play_title:nth-child(2) {
+        font-size: 32px;
+        font-weight: 800;
+      }
+      .play_title:nth-child(3) {
+        font-size: 13px;
+        font-weight: 800;
+      }
+
+      .buttons {
+        margin: 28px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      #play_button {
+        padding: 15px 30px;
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        font-weight: 800;
+        border: 3px solid black;
+        border-radius: 15%;
+        justify-content: space-evenly;
+        box-shadow: 1px 5px;
+      }
+      .play_button {
+        padding: 10px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        font-weight: 400;
+        border: 3px solid black;
+        box-shadow: 1px 5px;
+      }
+      #play_icon {
+        margin-right: 10px;
+      }
+      .music_list {
+        margin: 55px 40px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+      }
+      .list_sq {
+        padding: 25px;
+        background-color: tomato;
+        border-radius: 20%;
+        border: 3px solid black;
+      }
+      .list_name {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-left: 10px;
+      }
+      .list_title {
+        font-size: 20px;
+        font-weight: 800;
+      }
+      .list_arti {
+        font-size: 15px;
+      }
+      #sq2 {
+        background-color: palevioletred;
+      }
+      #sq3 {
+        background-color: cornflowerblue;
+      }
+      #sq4 {
+        background-color: mediumseagreen;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="play_screen">
+      <div class="top_bar">
+        <div class="top_bar_column">
+          <!-- x icon-->
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="top_bar_column">
+          <span>Playlist</span>
+        </div>
+      </div>
+
+      <div class="play_music">
+        <div id="photoicon" class="photoicon">
+          <!--photo icon-->
+          <i class="fas fa-image"></i>
+        </div>
+
+        <div class="play_music_title">
+          <span class="play_title">Random</span>
+          <span class="play_title">Love</span>
+          <span class="play_title">by Divay Kapoor</span>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <div id="play_button">
+          <div id="play_icon">
+            <!-- play button icon-->
+            <i class="fas fa-play"></i>
+            <!-- button shadow effect-->
+          </div>
+          <div>
+            <span class="play_play">Play</span>
+          </div>
+        </div>
+
+        <div class="play_button">
+          <!--raius 50%-->
+          <!--heart icon-->
+          <i class="far fa-grin-hearts"></i>
+        </div>
+
+        <div class="play_button">
+          <!--radius 50%-->
+          <!-- + icon -->
+          <i class="fas fa-plus"></i>
+        </div>
+      </div>
+
+      <div class="play_list_column">
+        <div class="music_list">
+          <div class="list_sq"></div>
+          <div class="list_name">
+            <span class="list_title">Matargasti</span>
+            <span class="list_arti">Mohit Chauhan</span>
+          </div>
+        </div>
+
+        <div class="music_list">
+          <div id="sq2" class="list_sq"></div>
+          <div class="list_name">
+            <span class="list_title">Attitude</span>
+            <span class="list_arti">Lewis Ofman.Attitude</span>
+          </div>
+        </div>
+
+        <div class="music_list">
+          <div id="sq3" class="list_sq"></div>
+          <div class="list_name">
+            <span class="list_title">Try Everything</span>
+            <span class="list_arti">Shakira.Zootopia</span>
+          </div>
+        </div>
+
+        <div class="music_list">
+          <div id="sq4" class="list_sq"></div>
+          <div class="list_name">
+            <span class="list_title">Sunflower</span>
+            <span class="list_arti">Joseph Vincent.Sunflower</span>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <script
+      src="https://kit.fontawesome.com/09a8bcbfb8.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
