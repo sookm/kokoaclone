@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  padding: 38px;
+  background-color: #f6f6f6;
+}
+.screen-box {
+  width: 205px;
+  height: 438px;
+  background-color: white;
+  padding: 11px;
+  border-radius: 20px;
+  position: relative;
+}
+.status-bar {
+  width: 100%;
+  height: 28px;
+  padding: 7px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.8);
+}
+.main-music {
+  height: 170px;
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+.jess-photo {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px 0 rgba(148, 190, 187, 0.3),
+    0 6px 20px 0 rgba(127, 141, 140, 0.3);
+}
+.main-artist__name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+.main-artist__name h1 {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.82);
+  font-weight: bolder;
+}
+.main-artist__name span {
+  font-size: 2px;
+  color: rgba(0, 0, 0, 0.3);
+  padding: 8px;
+}
+.main-music__button {
+  height: 50px;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-music__btn:first-child {
+  color: rgba(241, 239, 239, 0.815);
+  background-color: rgba(0, 0, 0, 0.82);
+  border-radius: 20px;
+  font-size: 2px;
+  padding: 8px;
+  font-weight: lighter;
+  width: 65px;
+  text-align: center;
+  box-shadow: 2px 5px 2px 0 rgba(0, 0.02, 0, 0.02),
+    5px 5px 5px 0 rgba(0, 0.03, 0, 0.03);
+}
+.main-music__btn:nth-child(2) {
+  color: rgba(0, 0, 0, 0.82);
+  background-color: #fdfdfe;
+  border-radius: 20px;
+  font-size: 2px;
+  padding: 7px;
+  font-weight: lighter;
+  width: 70px;
+  text-align: center;
+  box-shadow: 2px 2px 2px 0 rgba(0, 0.02, 0, 0.01),
+    2px 1px 2px 3px rgba(0, 0.03, 0, 0.02);
+}
+.list-music {
+  height: 183px;
+}
+.music-list__column {
+  height: 43px;
+  padding: 20px 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.3);
+}
+.jess-album {
+  height: 25px;
+  width: 25px;
+  border-radius: 5px;
+}
+.music-list-artist__name {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.music-list-artist__name span {
+  font-weight: lighter;
+  font-size: 2px;
+  color: rgba(0, 0, 0, 0.3);
+  margin-right: 55px;
+  margin-bottom: 5px;
+}
+.music-list-artist__name h1 {
+  font-size: 2px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.music-list__column:nth-child(2) {
+  box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.01),
+    0 2px 4px 2px rgba(0, 0, 0, 0.02);
+  border-radius: 10px;
+  position: relative;
+}
+.playing-icon {
+  position: absolute;
+  bottom: 15px;
+  left: 17px;
+  color: rgba(241, 239, 239, 0.904);
+}
+.play-bar__column {
+  height: 39px;
+  width: 90%;
+  padding: 2px 15px;
+  background-color: rgba(0, 0, 0, 0.82);
+  color: rgba(241, 239, 239, 0.904);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 0 2px 2px 3px rgba(0, 0, 0, 0.05), 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+  position: absolute;
+  bottom: 13px;
+}
+.play-bar__name {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.play-bar__name span {
+  font-weight: lighter;
+  font-size: 1px;
+  padding: 2px 0;
+  color: rgba(241, 239, 239, 0.4);
+}
+.play-bar__name h1 {
+  font-size: 2px;
+  padding: 1px 0;
+}
+.play-bar__icon {
+  font-weight: lighter;
+  font-size: 2px;
+  width: 33%;
+  display: flex;
+  justify-content: space-between;
+}
