@@ -1,32 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Fredoka+One&family=Kanit:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 * {
   box-sizing: border-box;
 }
 body {
   font-family: "Varela Round", sans-serif;
-  font-weight: 700;
+  font-weight: 900;
   display: flex;
   flex-direction: row;
   width: 100vw;
   padding: 38px;
   background-color: #f6f6f6;
+  justify-content: space-evenly;
 }
 .screen-box {
   width: 205px;
   height: 438px;
   background-color: white;
-  padding: 11px;
+  padding: 10px;
   border-radius: 20px;
   position: relative;
 }
-.status-bar {
+.status-bar,
+.status-bar-2 {
   width: 100%;
   height: 28px;
   padding: 7px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 10px;
+  font-size: 7px;
   font-weight: 700;
   color: rgba(0, 0, 0, 0.8);
 }
@@ -57,12 +60,14 @@ body {
 .main-artist__name h1 {
   font-size: 18px;
   color: rgba(0, 0, 0, 0.82);
+  font-weight: 900;
   font-weight: bolder;
 }
 .main-artist__name span {
   font-size: 2px;
   color: rgba(0, 0, 0, 0.3);
   padding: 8px;
+  font-weight: lighter;
 }
 .main-music__button {
   height: 50px;
@@ -101,12 +106,13 @@ body {
 }
 .music-list__column {
   height: 43px;
-  padding: 20px 12px;
+  padding: 20px 14px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   color: rgba(0, 0, 0, 0.3);
+  font-size: 7px;
 }
 .jess-album {
   height: 25px;
@@ -127,18 +133,20 @@ body {
 }
 .music-list-artist__name h1 {
   font-size: 2px;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.75);
+  font-weight: bolder;
+  font-weight: 800;
 }
 .music-list__column:nth-child(2) {
-  box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.01),
-    0 2px 4px 2px rgba(0, 0, 0, 0.02);
+  box-shadow: 7px 3px 3px 0 rgba(0, 0, 0, 0.01),
+    5px 2px 4px 2px rgba(0, 0, 0, 0.02);
   border-radius: 10px;
   position: relative;
 }
 .playing-icon {
   position: absolute;
   bottom: 15px;
-  left: 17px;
+  left: 20px;
   color: rgba(241, 239, 239, 0.904);
 }
 .play-bar__column {
@@ -177,4 +185,118 @@ body {
   width: 33%;
   display: flex;
   justify-content: space-between;
+}
+/*-- screen-2 --*/
+.playing-music {
+  height: 270px;
+  padding: 5px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#screen-2__icon {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.jess-playing-box {
+  height: 194px;
+  padding: 30px;
+  display: flex;
+}
+.jess-playing {
+  height: 148px;
+  width: 148px;
+  border-radius: 20px;
+  box-shadow: 0 3px 4px 0 rgba(148, 190, 187, 0.4),
+    0 6px 35px 0 rgba(127, 141, 140, 1);
+}
+.playing-artist__name {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.playing-artist__name h1 {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.82);
+  font-weight: 900;
+  font-weight: bolder;
+  padding: 3px;
+  margin-top: 15px;
+}
+.playing-artist__name span {
+  font-size: 3px;
+  color: rgba(0, 0, 0, 0.4);
+  padding: 6px;
+  font-weight: lighter;
+}
+.playing-bar__bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+.playing-time {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1px;
+  color: rgba(0, 0, 0, 0.2);
+  padding: 0 10px;
+}
+.playing-bar__buttons {
+  padding: 13px;
+  height: 85px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.82);
+}
+.playing-bar__buttons span {
+  color: rgba(0, 0, 0, 0.2);
+}
+.btn-playing {
+  padding: 13px;
+  display: flex;
+  color: rgba(241, 239, 239, 0.904);
+  background-color: rgba(0, 0, 0, 0.82);
+  border-radius: 50%;
+  box-shadow: 1px 0 5px 3px rgba(158, 172, 171, 0.2),
+    1px 2px 5px 3px rgba(151, 163, 162, 0.2);
+  font-size: 12px;
+}
+.btn-playing i {
+  margin-left: 2px;
+}
+.playing-range {
+  background-color: rgba(95, 93, 93, 0.01);
+}
+input[type="range"] {
+  -webkit-appearance: none;
+  padding: 5px;
+  width: 190px;
+}
+input[type="range"]:focus {
+  outline: none;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 2px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  margin-right: 10px;
+}
+input[type="range"]::-webkit-slider-thumb {
+  height: 5px;
+  width: 5px;
+  border-radius: 2px;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-appearance: none;
+  margin-top: -1px;
+}
+input[type="range"]::-moz-range-progress {
+  background-color: #f74343;
+}
+input[type="range"]::-ms-fill-upper {
+  background-color: transparent;
 }
