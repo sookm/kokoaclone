@@ -157,3 +157,13 @@ message-row--own message__time {
 .reply__column button:active {
   outline: none;
 }
+
+.message-row i {
+  font-size: 25px;
+  padding: 20px 10px 10px 5px;
+  border-radius: 20px;
+  margin-right: 10px;
+  color: bisque;
+  background-color: var(--beige);
+  text-align: center;
+}

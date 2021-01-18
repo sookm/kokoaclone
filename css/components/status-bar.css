@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  background-color: white;
+  background-color: bisque;
 }
 .status-bar__column {
   padding: 5px 5px;

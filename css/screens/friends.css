@@ -3,7 +3,7 @@
   display: block;
   opacity: 30%;
   padding: 10px 0px;
-  background-color: var(--mint);
+  background-color: var(--beige);
   color: inherit;
   font-size: 18px;
   margin-bottom: 15px;
@@ -21,14 +21,14 @@
 }
 .friends-screen__channel {
   margin-top: 25px;
-  border-top: 1px solid lightgray;
+  border-top: 1px solid var(--beige);
   padding-top: 5px;
 }
 .friends-screen__channel-header {
   margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
-  color: lightgray;
+  color: gray;
 }
 
 @keyframes hideSplashScreen {
