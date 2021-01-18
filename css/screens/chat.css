@@ -158,12 +158,20 @@ message-row--own message__time {
   outline: none;
 }
 
-.message-row i {
-  font-size: 25px;
-  padding: 20px 10px 10px 5px;
+.message-row .user-jess {
+  width: 50px;
+  height: 50px;
   border-radius: 20px;
+  margin-right: 10px;
+}
+.message-row i {
+  width: 35px;
+  height: 35px;
+  border-radius: 15px;
   margin-right: 10px;
   color: bisque;
   background-color: var(--beige);
   text-align: center;
+  padding: 10px 5px 0px 5px;
+  font-size: 25px;
 }
