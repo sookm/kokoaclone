@@ -294,9 +294,3 @@ input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   margin-top: -1px;
 }
-input[type="range"]::-moz-range-progress {
-  background-color: #f74343;
-}
-input[type="range"]::-ms-fill-upper {
-  background-color: transparent;
-}

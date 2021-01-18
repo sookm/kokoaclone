@@ -1,0 +1,45 @@
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--mint);
+  padding: 20px 50px;
+  /* do not modify my box size even tho I added padding*/
+  box-sizing: border-box;
+  border-top: 1px solid var(--mint);
+}
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+.nav__link {
+  position: relative;
+  color: bisque;
+}
+.nav__notification {
+  background-color: bisque;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--beige);
+  border-radius: 50%;
+  font-weight: 600;
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+}
+.nav__noti {
+  height: 5px;
+  width: 5px;
+  background-color: var(--beige);
+  border-radius: 50%;
+  color: var(--beige);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 25px;
+  left: 33px;
+}
