@@ -29,3 +29,7 @@ body {
 .main-screen {
   padding: 0px var(--horizontal-space);
 }
+.index__body,
+.index__bar {
+  background-color: white;
+}

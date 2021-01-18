@@ -4,6 +4,7 @@
 .more-suggestions {
   margin-top: 50px;
   border-top: var(--main-border);
+  border-color: rgba(0, 0, 0, 0.4);
   padding-top: 40px;
 }
 .more-suggestions__title {
