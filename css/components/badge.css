@@ -1,11 +1,27 @@
 .badge {
-  background-color: bisque;
+  background-color: var(--beige);
   width: 30px;
   height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--beige);
+  color: bisque;
   border-radius: 50%;
   font-weight: 600;
+}
+
+@keyframes heartBeat {
+  0% {
+    color: white;
+  }
+  50% {
+    color: tomato;
+  }
+  100% {
+    color: white;
+  }
+}
+
+.open-post__heart:hover i {
+  animation: heartBeat 2s linear infinite;
 }
